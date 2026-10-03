@@ -1,0 +1,23 @@
+{% extends 'faculty/base.html' %}
+
+{% block content %}
+
+<h1>{{ major.name }}</h1>
+<p class="major-code">{{ major.code }}</p>
+<p>{{ major.description}}</p>
+
+<p>{{ major.graduating_department }}</p>
+{% for subject in subjects %}
+    <ul>
+        <li>{{ subject.name }}</li>
+    </ul>
+{% empty %}
+    <h4>Предметів поки нема :(</h4>
+{% endfor %}
+
+<address>
+    <p>{{ major.recruiter_name }}</p>
+    <p>{{ major.recruiter_phone }}</p>
+</address>
+
+{% endblock %}

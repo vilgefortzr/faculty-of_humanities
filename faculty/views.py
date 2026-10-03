@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from .models import FacultyInfo
+from django.shortcuts import render, get_object_or_404
+from .models import FacultyInfo, Major
 
 
 def home(request):
@@ -8,7 +8,14 @@ def home(request):
 
 
 def programs(request):
-    return render(request, 'faculty/programs.html')
+    majors = Major.objects.all()
+    return render(request, 'faculty/programs.html', {'majors': majors})
+
+
+def major(request, major_id):
+    program = get_object_or_404(Major, id=major_id)
+    subjects = program.subjects.all()
+    return render(request, 'faculty/major.html', {'major': program, 'subjects': subjects})
 
 
 def departments(request):

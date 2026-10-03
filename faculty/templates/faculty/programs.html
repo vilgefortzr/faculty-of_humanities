@@ -2,6 +2,25 @@
 
 {% block content %}
 
-<p>It is programs page.</p>
+<h1>Спеціальності факультету</h1>
+<div class="majors-grid">
+    {% for major in majors %}
+        <div class="major-card">
+            <a href="{% url 'major' major.id %}">
+                <h3> {{ major.name }}</h3>
+            </a>
+            <p class="major-code">{{ major.code }}</p>
+            <p>{{ major.description|truncatewords:50}}</p>
+            <address>
+                <p>{{ major.recruiter_name }}</p>
+                <p>{{ major.recruiter_phone }}</p>
+            </address>
+        </div>
+
+        {% empty %}
+            <h4>Спеціальностей поки нема :(</h4>
+        {% endfor %}
+</div>
+
 
 {% endblock %}

@@ -31,18 +31,18 @@ body {
 }
 
 .navbar nav a {
-    color: #003366  ;
+    color: #3c3c3c;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 470;
 }
 
 .navbar nav a:hover {
-    color: #446b98;
+    color: #0052a6;
 }
 
 .container {
     flex: 1;
-    max-width: 900px;
+    max-width: 1400px;
     width: 100%;
     margin: 2rem auto;
     padding: 0 1rem;
@@ -51,6 +51,7 @@ body {
 
 h1, h2 {
     color: #003366;
+    text-align: center;
 }
 
 .footer {
@@ -96,4 +97,52 @@ h1, h2 {
 
 .contacts-card p:first-child {
     margin-top: 0;
+}
+
+.majors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.major-card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.major-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.major-card h3 {
+    color: #003366;
+    margin: 0 0 0.25rem;
+}
+
+.major-card .major-code {
+    font-weight: bold;
+    color: #6c757d;
+    margin-bottom: 0.75rem;
+}
+
+.major-card address {
+    margin-top: auto;
+    padding-top: 1rem;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #495057;
+    border-top: 1px solid #f1f3f5;
+}
+
+.home-content {
+    max-width: 850px;
+    margin: 0 auto;
 }

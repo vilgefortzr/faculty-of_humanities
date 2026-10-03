@@ -1,13 +1,13 @@
 {% extends 'faculty/base.html' %}
 
 {% block content %}
+<div class="home-content">
+    <h1 class="faculty-title">{{ faculty_info.title }}</h1>
 
-<h1 class="faculty-title">{{ faculty_info.title }}</h1>
+    <p class="faculty-description">{{ faculty_info.description }}</p>
 
-<p class="faculty-description">{{ faculty_info.description }}</p>
-
-<address class="contacts-card">
-    {{ faculty_info.contacts|linebreaks }}
-</address>
-
+    <address class="contacts-card">
+        {{ faculty_info.contacts|linebreaks }}
+    </address>
+</div>
 {% endblock %}
