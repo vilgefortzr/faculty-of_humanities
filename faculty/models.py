@@ -6,6 +6,9 @@ class FacultyInfo(models.Model):
     description = models.TextField()
     contacts = models.TextField()
 
+    class Meta:
+        verbose_name_plural = "Faculty info"
+
     def __str__(self):
         return self.title
 

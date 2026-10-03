@@ -2,6 +2,12 @@
 
 {% block content %}
 
-<p>It is home page.</p>
+<h1 class="faculty-title">{{ faculty_info.title }}</h1>
+
+<p class="faculty-description">{{ faculty_info.description }}</p>
+
+<address class="contacts-card">
+    {{ faculty_info.contacts|linebreaks }}
+</address>
 
 {% endblock %}
