@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import FacultyInfo, Major
+from .models import FacultyInfo, Major, Department
 
 
 def home(request):
@@ -19,4 +19,14 @@ def major(request, major_id):
 
 
 def departments(request):
-    return render(request, 'faculty/departments.html')
+    departments_list = Department.objects.all()
+    return render(request, 'faculty/departments.html', {'departments': departments_list})
+
+
+def department(request, department_id):
+    department = get_object_or_404(Department, id=department_id)
+    lecturers = department.lecturers.all()
+    return render(request,
+                  'faculty/department.html',
+                  {'department': department, 'lecturers': lecturers}
+                  )

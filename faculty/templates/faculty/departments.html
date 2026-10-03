@@ -2,6 +2,17 @@
 
 {% block content %}
 
-<p>It is departments page.</p>
-
+{% for department in departments %}
+    <a href='{% url 'department' department.id %}'>
+        <h3>{{ department.name }}</h3>
+    </a>
+    <h4>{{ department.head_of_department }}</h4>
+    {% for major in department.majors.all %}
+        <ul>
+            <li>{{ major.name }}</li>
+        </ul>
+    {% empty %}
+        <h4>Випускових спеціальностей поки нема :(</h4>
+    {% endfor %}
+{% endfor %}
 {% endblock %}

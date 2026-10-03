@@ -1,0 +1,16 @@
+{% extends 'faculty/base.html' %}
+
+{% block content %}
+    <h3>{{ department.name }}</h3>
+    <h4>{{ department.head_of_department }}</h4>
+    {% for lecturer in lecturers %}
+        <h4>{{ lecturer.name }}</h4>
+        <p>{{ lecturer.get_academic_position_display }}</p>
+        <p>{{ lecturer.get_academic_degree_display }}</p>
+    {% empty %}
+        <h4>Викладачів поки нема :(</h4>
+    {% endfor %}
+
+
+
+{% endblock %}
