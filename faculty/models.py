@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 
 class FacultyInfo(models.Model):
@@ -83,12 +84,15 @@ class ExchangeProgram(models.Model):
     university = models.CharField(max_length=80)
     country = models.CharField(max_length=80, default='')
     languages = models.CharField(max_length=80)
-    study_places = models.CharField(max_length=50)
+    study_places = models.IntegerField()
     deadline = models.DateField()
     description = models.TextField()
 
+    @property
+    def deadline_passed(self):
+        return self.deadline < timezone.localdate()
+
     class Meta:
-        verbose_name_plural = "Exchange Program"
         ordering = ['deadline']
 
     def __str__(self):

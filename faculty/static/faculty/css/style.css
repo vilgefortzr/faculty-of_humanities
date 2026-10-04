@@ -204,3 +204,11 @@ h1, h2 {
 .card-footer p {
     margin: 0 0 0.25rem;
 }
+
+#deadline-passed {
+    color: #da6464;
+}
+
+#deadline-notpassed {
+    color: forestgreen;
+}

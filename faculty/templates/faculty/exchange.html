@@ -12,6 +12,11 @@
             <div class="card-footer">
                 <p>Кількість місць: {{ program.study_places }}</p>
                 <p>Дедлайн подачі: {{ program.deadline|date:"d.m.Y" }}</p>
+                {% if program.deadline_passed %}
+                    <p class="subtitle"  id="deadline-passed"><strong>Прийом завершено!</strong></p>
+                {% else %}
+                    <p class="subtitle" id="deadline-notpassed"><strong>Прийом триває!</strong></p>
+                {% endif %}
             </div>
         </div>
     {% empty %}
