@@ -1,16 +1,21 @@
 {% extends 'faculty/base.html' %}
 
 {% block content %}
-    <h3>{{ department.name }}</h3>
-    <h4>{{ department.head_of_department }}</h4>
+
+<h1>{{ department.name }}</h1>
+<p class="page-subtitle">{{ department.head_of_department }}</p>
+
+<h2>Викладачі</h2>
+<div class="cards-grid">
     {% for lecturer in lecturers %}
-        <h4>{{ lecturer.name }}</h4>
-        <p>{{ lecturer.get_academic_position_display }}</p>
-        <p>{{ lecturer.get_academic_degree_display }}</p>
+        <div class="card card-short">
+            <h3>{{ lecturer.name }}</h3>
+            <p class="subtitle">{{ lecturer.get_academic_position_display }}</p>
+            <p>{{ lecturer.get_academic_degree_display }}</p>
+        </div>
     {% empty %}
-        <h4>Викладачів поки нема :(</h4>
+        <p class="empty-text">Викладачів поки нема :(</p>
     {% endfor %}
-
-
+</div>
 
 {% endblock %}
