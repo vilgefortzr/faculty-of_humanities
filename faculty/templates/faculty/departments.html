@@ -5,7 +5,7 @@
     {% for department in departments %}
       <div class="card card-short">
         <h3><a href="{% url 'department' department.id %}">{{ department.name }}</a></h3>
-        <p class="subtitle"><i id="department-head">Завідувач кафедри:</i> {{ department.head_of_department }}</p>
+        <p class="subtitle"><i class="accent-text">Завідувач кафедри:</i> {{ department.head_of_department }}</p>
         {% with majors=department.majors.all %}
           {% if majors %}
             <ul>

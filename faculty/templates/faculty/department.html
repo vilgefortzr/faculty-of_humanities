@@ -5,9 +5,9 @@
   <h2>Викладачі</h2>
   <div class="cards-grid">
     {% for lecturer in lecturers %}
-      <div class="card card-short">
+      <div class="card">
         <h3>{{ lecturer.name }}</h3>
-        <p class="subtitle">{{ lecturer.get_academic_position_display }}</p>
+        <p class="subtitle accent-text">{{ lecturer.get_academic_position_display }}</p>
         <p>{{ lecturer.get_academic_degree_display }}</p>
       </div>
     {% empty %}
