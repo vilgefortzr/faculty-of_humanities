@@ -6,7 +6,7 @@
 <div class="cards-grid">
     {% for program in exchange %}
         <div class="card">
-            <h3>{{ program.university }}</h3>
+            <h3>{{ program.university }}, {{ program.country }}</h3>
             <p class="subtitle">Мови навчання: {{ program.languages }}</p>
             <p>{{ program.description }}</p>
             <div class="card-footer">

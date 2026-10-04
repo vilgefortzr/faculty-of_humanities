@@ -81,6 +81,7 @@ class Lecturer(models.Model):
 
 class ExchangeProgram(models.Model):
     university = models.CharField(max_length=80)
+    country = models.CharField(max_length=80, default='')
     languages = models.CharField(max_length=80)
     study_places = models.CharField(max_length=50)
     deadline = models.DateField()
