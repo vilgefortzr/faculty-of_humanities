@@ -1,0 +1,22 @@
+{% extends 'faculty/base.html' %}
+
+{% block content %}
+
+<h1>Програми обміну</h1>
+<div class="cards-grid">
+    {% for program in exchange %}
+        <div class="card">
+            <h3>{{ program.university }}</h3>
+            <p class="subtitle">Мови навчання: {{ program.languages }}</p>
+            <p>{{ program.description }}</p>
+            <div class="card-footer">
+                <p>Кількість місць: {{ program.study_places }}</p>
+                <p>Дедлайн подачі: {{ program.deadline|date:"d.m.Y" }}</p>
+            </div>
+        </div>
+    {% empty %}
+        <p class="empty-text">Програм обміну поки нема :(</p>
+    {% endfor %}
+</div>
+
+{% endblock %}

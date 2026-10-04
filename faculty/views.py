@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import FacultyInfo, Major, Department
+from .models import FacultyInfo, Major, Department, ExchangeProgram
 
 
 def home(request):
@@ -30,3 +30,9 @@ def department(request, department_id):
                   'faculty/department.html',
                   {'department': department, 'lecturers': lecturers}
                   )
+
+
+def exchange(request):
+    exchange_program = ExchangeProgram.objects.all()
+    return render(request, 'faculty/exchange.html', {'exchange': exchange_program})
+

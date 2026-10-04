@@ -77,3 +77,18 @@ class Lecturer(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class ExchangeProgram(models.Model):
+    university = models.CharField(max_length=80)
+    languages = models.CharField(max_length=80)
+    study_places = models.CharField(max_length=50)
+    deadline = models.DateField()
+    description = models.TextField()
+
+    class Meta:
+        verbose_name_plural = "Exchange Program"
+        ordering = ['deadline']
+
+    def __str__(self):
+        return self.university
