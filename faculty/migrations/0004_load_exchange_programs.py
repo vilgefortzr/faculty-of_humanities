@@ -55,8 +55,8 @@ PROGRAMS = [
 
 INSERT_SQL = (
     'INSERT INTO faculty_exchangeprogram '
-    '(university, languages, study_places, deadline, description) '
-    'VALUES (%s, %s, %s, %s, %s)'
+    '(university, country, languages, study_places, deadline, description) '
+    'VALUES (%s, \'\', %s, %s, %s, %s)'
 )
 
 DELETE_SQL = 'DELETE FROM faculty_exchangeprogram WHERE description = %s'

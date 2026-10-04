@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="uk">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Факультет гуманітарних наук</title>
     <link rel="stylesheet" href="{% static 'faculty/css/style.css' %}">
-</head>
-<body>
+  </head>
+  <body>
     <header class="navbar">
-        <a href="{% url 'home' %}">
-            <img src="{% static 'faculty/images/naukma_logo.png' %}" alt="logo" class="logo">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="{% url 'home' %}">Домашня</a></li>
-                <li><a href="{% url 'programs' %}">Спеціальності</a></li>
-                <li><a href="{% url 'departments' %}">Кафедри</a></li>
-                <li><a href="{% url 'exchange' %}">Програма обміну</a></li>
-            </ul>
-        </nav>
+      <a href="{% url 'home' %}">
+        <img src="{% static 'faculty/images/naukma_logo.png' %}"
+             alt="logo"
+             class="logo">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="{% url 'home' %}">Домашня</a></li>
+          <li><a href="{% url 'programs' %}">Спеціальності</a></li>
+          <li><a href="{% url 'departments' %}">Кафедри</a></li>
+          <li><a href="{% url 'exchange' %}">Програма обміну</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="container">
-        {% block content %}
-        {% endblock %}
+      {% block content %}{% endblock %}
     </main>
     <footer class="footer">
-        <p>&copy; 2026. НаУКМА. Ніякі права не захищені.</p>
+      <p>© 2026. НаУКМА. Ніякі права не захищені.</p>
     </footer>
-</body>
+  </body>
 </html>

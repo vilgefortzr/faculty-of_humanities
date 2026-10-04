@@ -33,7 +33,7 @@ def backward(apps, schema_editor):
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('faculty', '0005_exchange_country'),
+        ('faculty', '0004_load_exchange_programs'),
     ]
 
     operations = [

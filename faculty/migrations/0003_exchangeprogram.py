@@ -15,6 +15,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('university', models.CharField(max_length=80)),
+                ('country', models.CharField(default='', max_length=80)),
                 ('languages', models.CharField(max_length=80)),
                 ('study_places', models.CharField(max_length=50)),
                 ('deadline', models.DateField()),
