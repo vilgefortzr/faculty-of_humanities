@@ -1,0 +1,28 @@
+{% extends "faculty/base.html" %}
+{% block content %}
+  <h1>Програми обміну</h1>
+  <div class="cards-grid">
+    {% for program in exchange %}
+      <div class="card">
+        {% if program.country %}
+          <h3>{{ program.university }}, {{ program.country }}</h3>
+        {% else %}
+          <h3>{{ program.university }}</h3>
+        {% endif %}
+        <p class="subtitle">Мови навчання: {{ program.languages }}</p>
+        <p>{{ program.description }}</p>
+        <div class="card-footer">
+          <p>Кількість місць: {{ program.study_places }}</p>
+          <p>Дедлайн подачі: {{ program.deadline|date:"d.m.Y" }}</p>
+          {% if program.deadline_passed %}
+            <p class="subtitle"  id="deadline-passed"><strong>Прийом завершено!</strong></p>
+          {% else %}
+            <p class="subtitle" id="deadline-notpassed"><strong>Прийом триває!</strong></p>
+          {% endif %}
+        </div>
+      </div>
+    {% empty %}
+      <p class="empty-text">Програм обміну поки нема :(</p>
+    {% endfor %}
+  </div>
+{% endblock %}

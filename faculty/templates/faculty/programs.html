@@ -1,0 +1,20 @@
+{% extends "faculty/base.html" %}
+{% block content %}
+  <h1>Спеціальності факультету</h1>
+  <div class="cards-grid">
+    {% for major in majors %}
+      <div class="card">
+        <h3><a href="{% url 'major' major.id %}">{{ major.name }}</a></h3>
+        <p class="subtitle">{{ major.code }}</p>
+        <p>{{ major.description|truncatewords:50 }}</p>
+        <address>
+          <p><b>Координатор набору:</b></p>
+          <p>{{ major.recruiter_name }}</p>
+          <p>{{ major.recruiter_phone }}</p>
+        </address>
+      </div>
+    {% empty %}
+      <p class="empty-text">Спеціальностей поки нема :(</p>
+    {% endfor %}
+  </div>
+{% endblock %}

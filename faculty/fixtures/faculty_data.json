@@ -1,0 +1,623 @@
+[
+{
+  "model": "faculty.facultyinfo",
+  "pk": 1,
+  "fields": {
+    "title": "Факультет гуманітарних наук НаУКМА",
+    "description": "Факультет гуманітарних наук (ФГН) Національного університету «Києво-Могилянська академія» — науково-освітній підрозділ, який створює й поширює гуманітарні знання та готує компетентних, конкурентоспроможних фахівців-гуманітаріїв. Факультет поєднує наукову, освітню, просвітницьку і культурну діяльність і є визнаним осередком гуманітарних досліджень в Україні та за її межами. До його складу входять вісім кафедр: літературознавства, культурології, української мови, філософії та релігієзнавства, англійської мови, археології, загального та слов'янського мовознавства й історії. Тут працюють 178 викладачів, а студенти навчаються на бакалаврських, магістерських і PhD-програмах. За рейтингом працедавців журналу «Гроші» НаУКМА очолює список українських вишів із гуманітарних спеціальностей.",
+    "contacts": "Адреса: вул. Сковороди, 2, Київ, 04070 (корпус 1)\r\nДеканат: (044) 425-14-20\r\nДекан: Мазін Дмитро Михайлович"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 4,
+  "fields": {
+    "name": "Історична географія України"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 5,
+  "fields": {
+    "name": "Основи археології"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 6,
+  "fields": {
+    "name": "Англійська мова"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 7,
+  "fields": {
+    "name": "Українська мова (за професійним спрямуванням)"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 8,
+  "fields": {
+    "name": "Історія античного світу"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 9,
+  "fields": {
+    "name": "Практика музейна"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 10,
+  "fields": {
+    "name": "Релігієзнавство"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 11,
+  "fields": {
+    "name": "Логіка"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 12,
+  "fields": {
+    "name": "Філософія"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 13,
+  "fields": {
+    "name": "Зарубіжна література"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 14,
+  "fields": {
+    "name": "Фізичне виховання"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 15,
+  "fields": {
+    "name": "Фонетика і орфографія української мови"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 16,
+  "fields": {
+    "name": "Вступ до мовознавства"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 17,
+  "fields": {
+    "name": "Фольклористика"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 18,
+  "fields": {
+    "name": "Культурологія"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 19,
+  "fields": {
+    "name": "Cлов’янська мова (болгарська)"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 20,
+  "fields": {
+    "name": "Комп’ютерна лінгвістика"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 21,
+  "fields": {
+    "name": "Зіставне мовознавство"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 22,
+  "fields": {
+    "name": "Основи етнолінгвістики"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 23,
+  "fields": {
+    "name": "Німецька мова"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 25,
+  "fields": {
+    "name": "Лінгвістична семантика"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 26,
+  "fields": {
+    "name": "Соціолінгвістика"
+  }
+},
+{
+  "model": "faculty.subject",
+  "pk": 27,
+  "fields": {
+    "name": "Мовні контакти"
+  }
+},
+{
+  "model": "faculty.department",
+  "pk": 2,
+  "fields": {
+    "name": "Кафедра літературознавства",
+    "head_of_department": "Веретельник Роман Миколайович"
+  }
+},
+{
+  "model": "faculty.department",
+  "pk": 3,
+  "fields": {
+    "name": "Кафедра культурології",
+    "head_of_department": "Герчанівська Поліна Евальдівна"
+  }
+},
+{
+  "model": "faculty.department",
+  "pk": 4,
+  "fields": {
+    "name": "Кафедра української мови",
+    "head_of_department": "Наталія Юріївна Ясакова"
+  }
+},
+{
+  "model": "faculty.department",
+  "pk": 5,
+  "fields": {
+    "name": "Кафедра філософії та релігієзнавства",
+    "head_of_department": "Циба В’ячеслав Миколайович"
+  }
+},
+{
+  "model": "faculty.department",
+  "pk": 6,
+  "fields": {
+    "name": "Кафедра англійської мови",
+    "head_of_department": "Рудницька Наталія Миколаївна"
+  }
+},
+{
+  "model": "faculty.department",
+  "pk": 7,
+  "fields": {
+    "name": "Кафедра археології",
+    "head_of_department": "Віктор Іванович Клочко"
+  }
+},
+{
+  "model": "faculty.department",
+  "pk": 8,
+  "fields": {
+    "name": "Кафедра загального та слов'янського мовознавства",
+    "head_of_department": "Куранова Світлана Іванівна"
+  }
+},
+{
+  "model": "faculty.department",
+  "pk": 9,
+  "fields": {
+    "name": "Кафедра історії",
+    "head_of_department": "Яременко Максим Васильович"
+  }
+},
+{
+  "model": "faculty.major",
+  "pk": 2,
+  "fields": {
+    "name": "Історія",
+    "code": "B9",
+    "description": "Бакалаврська програма «Історія» передусім орієнтована на навчання розуміти минуле та його контексти замість простого вивчення історичних фактів. Її мета — максимально розкрити твій потенціал  і створити основу для успішної реалізації як у сфері історичних досліджень, так і на ринку праці.",
+    "recruiter_name": "Бородіна Тетяна Миколаївна",
+    "recruiter_phone": "+38(067) 765 33 17",
+    "graduating_department": 9,
+    "subjects": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+},
+{
+  "model": "faculty.major",
+  "pk": 3,
+  "fields": {
+    "name": "Археологія",
+    "code": "В9",
+    "description": "Бакалаврська програма «Археологія» у повній мірі віддзеркалює міждисциплінарність цієї науки. Тут ти спробуєш себе у ролі історика, аналітика даних, музейника, фахівця з культурної спадщини та багатьох інших. Навчишся розбиратися та працювати з давнім минулим, побуваєш в археологічних експедиціях, працюватимеш зі справжніми артефактами та пам’ятками.",
+    "recruiter_name": "Білинський Олег Олегович",
+    "recruiter_phone": "+38(099) 719 72 87",
+    "graduating_department": 7,
+    "subjects": [
+      5,
+      6,
+      7,
+      9
+    ]
+  }
+},
+{
+  "model": "faculty.major",
+  "pk": 4,
+  "fields": {
+    "name": "Філософія",
+    "code": "В10",
+    "description": "Перша в Україні бакалаврська програма з філософії, створена 1992 року, поєднує академічну традицію з відкритістю до нових підходів і сучасної думки. Вона охоплює як історію філософії — від античності до сьогодення, — так і ключові напрями теоретичної та практичної філософії, поєднуючи національний і світовий контекст. Під час навчання ти отримуєш ґрунтовну гуманітарну й мовну підготовку, а також маєш можливість обирати курси з інших спеціальностей, формуючи власну освітню траєкторію.",
+    "recruiter_name": "С’єдін Олександр Сергійович",
+    "recruiter_phone": "+38(066) 449 72 23",
+    "graduating_department": 5,
+    "subjects": [
+      9,
+      10,
+      11,
+      12
+    ]
+  }
+},
+{
+  "model": "faculty.major",
+  "pk": 5,
+  "fields": {
+    "name": "Англійська мова та українська мова",
+    "code": "В11",
+    "description": "Програма поєднує ґрунтовну філологічну підготовку з базовими знаннями різних видів усного й письмового перекладу. Ти зможеш сформувати індивідуальну освітню траєкторію завдяки організації навчання за принципами вільного творчого навчання (Liberal Arts Education).",
+    "recruiter_name": "Ясакова Наталія Юріївна",
+    "recruiter_phone": "+38(066) 829 73 76",
+    "graduating_department": 6,
+    "subjects": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+},
+{
+  "model": "faculty.major",
+  "pk": 6,
+  "fields": {
+    "name": "Мова, література, компаративістика",
+    "code": "В11",
+    "description": "Бакалаврська програма «Мова, література, компаративістика» дає фундаментальну філологічну підготовку з фокусом на компаративне мислення — уміння бачити мовні й літературні явища в ширшому культурному контексті. Ти вивчатимеш українську мову в історичному, теоретичному й соціокультурному вимірах (у синхронії та діахронії), українську і світову літератури, фольклористику й теорію літератури.\r\n\r\nОсобливість програми — поєднання мовознавства і літературознавства як двох взаємопов’язаних напрямів, які на магістерському рівні можна буде поглибити окремо. Компаративний підхід реалізується через зіставне мовознавство і літературну компаративістику.\r\n\r\nВажливою частиною навчання є мовна підготовка: ти працюватимеш з українською та англійською мовами, а також зможеш вивчати інші іноземні мови на вибір — класичні, одну із західно- чи південнослов’янських або одну з романських чи германських мов.\r\n\r\nПрограма передбачає гнучку освітню траєкторію: обов’язкові дисципліни доповнюються вибірковими курсами, які ти обираєш відповідно до своїх інтересів. Навчання організоване за принципами вільної гуманітарної освіти (Liberal Arts Education).\r\n\r\nФілологія сьогодні відіграє важливу роль у збереженні й розвитку української культурної ідентичності та формуванні демократичних цінностей — і ця програма є частиною цього процесу.",
+    "recruiter_name": "Пелешенко Наталія Іванівна",
+    "recruiter_phone": "+38(050) 866 14 48",
+    "graduating_department": 2,
+    "subjects": [
+      7,
+      9,
+      16,
+      17
+    ]
+  }
+},
+{
+  "model": "faculty.major",
+  "pk": 7,
+  "fields": {
+    "name": "Культурологія",
+    "code": "В12",
+    "description": "Бакалаврська програма «Культурологія» поєднує гуманітарну освіту, дослідження і практику. Вона формує фахівців, які вміють працювати з культурними процесами, текстами та ідеями, аналізувати інформацію і створювати власні інтерпретації.",
+    "recruiter_name": "Герчанівська Поліна Евальдівна",
+    "recruiter_phone": "+38(050) 225 55 88",
+    "graduating_department": 3,
+    "subjects": [
+      6,
+      7,
+      9,
+      12,
+      18
+    ]
+  }
+},
+{
+  "model": "faculty.major",
+  "pk": 8,
+  "fields": {
+    "name": "Українська мова, компаративістика і психолінгвістика",
+    "code": "В11",
+    "description": "Це магістерська програма для тих, хто прагне розуміти мову глибше: як структуру, як когнітивний процес і як інструмент комунікації у сучасному світі. Вона поєднує класичну лінгвістичну школу НаУКМА з новітніми міждисциплінарними підходами і розвиває напрям, започаткований у 2008 році.",
+    "recruiter_name": "Куранова Світлана Іванівна",
+    "recruiter_phone": "+38(050) 974 93 97",
+    "graduating_department": 8,
+    "subjects": [
+      19,
+      20,
+      21,
+      22
+    ]
+  }
+},
+{
+  "model": "faculty.major",
+  "pk": 9,
+  "fields": {
+    "name": "Мови (англійська й українська) та комунікація",
+    "code": "В11",
+    "description": "Магістерська програма «Мови (англійська й українська) та комунікація» готує фахівців, які працюють із мовою як інструментом впливу, взаємодії й дослідження. Тут ти навчишся не просто аналізувати мову, а розуміти, як вона працює в реальних ситуаціях — у медіа, бізнесі, освіті, науці й міжкультурній комунікації.\r\n\r\nПрограма відповідає на запит часу: сьогодні потрібні не лише знавці мов, а люди, які можуть пояснювати, інтерпретувати, переконувати й досліджувати. В Україні досі бракує фахівців, які працюють із сучасною комунікативною лінгвістикою та контрастивними дослідженнями української й англійської мов — і саме на це спрямоване навчання.\r\n\r\nТи працюватимеш із українською та англійською мовами і зможеш додатково опанувати ще одну європейську мову. Водночас програма формує міждисциплінарне мислення, яке дозволяє виходити за межі класичної філології.",
+    "recruiter_name": "Ожоган Василь Михайлович",
+    "recruiter_phone": "+38(095) 354 61 46",
+    "graduating_department": 4,
+    "subjects": [
+      23,
+      25,
+      26,
+      27
+    ]
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 2,
+  "fields": {
+    "name": "Агеєва Віра Павлівна",
+    "academic_position": "professor",
+    "academic_degree": "dsc",
+    "department": 2
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 3,
+  "fields": {
+    "name": "Борисюк Ірина Василівна",
+    "academic_position": "associate_professor",
+    "academic_degree": "phd",
+    "department": 2
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 4,
+  "fields": {
+    "name": "Веретельник Роман Миколайович",
+    "academic_position": "associate_professor",
+    "academic_degree": "phd",
+    "department": 2
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 5,
+  "fields": {
+    "name": "Бондарець Оксана Василівна",
+    "academic_position": "senior_lecturer",
+    "academic_degree": "none",
+    "department": 3
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 6,
+  "fields": {
+    "name": "Брюховецька Ольга Вячеславівна",
+    "academic_position": "senior_lecturer",
+    "academic_degree": "phd",
+    "department": 3
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 7,
+  "fields": {
+    "name": "Данченко Марія Леонідівна",
+    "academic_position": "senior_lecturer",
+    "academic_degree": "phd",
+    "department": 3
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 8,
+  "fields": {
+    "name": "Кадочнікова Олена Петрівна",
+    "academic_position": "associate_professor",
+    "academic_degree": "phd",
+    "department": 4
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 9,
+  "fields": {
+    "name": "Лаврінець Олена Яківна",
+    "academic_position": "associate_professor",
+    "academic_degree": "phd",
+    "department": 4
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 10,
+  "fields": {
+    "name": "Павленко Оксана Миколаївна",
+    "academic_position": "senior_lecturer",
+    "academic_degree": "phd",
+    "department": 4
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 11,
+  "fields": {
+    "name": "Пастушенко Людмила Андріївна",
+    "academic_position": "associate_professor",
+    "academic_degree": "phd",
+    "department": 5
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 12,
+  "fields": {
+    "name": "Розумна Юлія Валентинівна",
+    "academic_position": "senior_lecturer",
+    "academic_degree": "phd",
+    "department": 5
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 13,
+  "fields": {
+    "name": "Юринець Ярина Ігорівна",
+    "academic_position": "senior_lecturer",
+    "academic_degree": "none",
+    "department": 5
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 14,
+  "fields": {
+    "name": "Василенко Ірина Василівна",
+    "academic_position": "associate_professor",
+    "academic_degree": "phd",
+    "department": 6
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 15,
+  "fields": {
+    "name": "Моісеєнко Олена Юріївна",
+    "academic_position": "professor",
+    "academic_degree": "dsc",
+    "department": 6
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 16,
+  "fields": {
+    "name": "Новікова Ганна Володимирівна",
+    "academic_position": "senior_lecturer",
+    "academic_degree": "none",
+    "department": 6
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 17,
+  "fields": {
+    "name": "Залізняк Леонід Львович",
+    "academic_position": "professor",
+    "academic_degree": "dsc",
+    "department": 7
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 18,
+  "fields": {
+    "name": "Борисов Артем",
+    "academic_position": "senior_lecturer",
+    "academic_degree": "phd",
+    "department": 7
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 19,
+  "fields": {
+    "name": "Кублій Михайло Васильович",
+    "academic_position": "senior_lecturer",
+    "academic_degree": "phd",
+    "department": 7
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 20,
+  "fields": {
+    "name": "Антонова Ольга Олександрівна",
+    "academic_position": "senior_lecturer",
+    "academic_degree": "none",
+    "department": 8
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 21,
+  "fields": {
+    "name": "Лебедівна Оксана Ярославівна",
+    "academic_position": "senior_lecturer",
+    "academic_degree": "phd",
+    "department": 8
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 22,
+  "fields": {
+    "name": "Тома Наталія Михайлівна",
+    "academic_position": "senior_lecturer",
+    "academic_degree": "phd",
+    "department": 8
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 23,
+  "fields": {
+    "name": "Багро Сергій Олександрович,",
+    "academic_position": "senior_lecturer",
+    "academic_degree": "phd",
+    "department": 9
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 24,
+  "fields": {
+    "name": "Бородіна Тетяна Миколаївна",
+    "academic_position": "assistant",
+    "academic_degree": "none",
+    "department": 9
+  }
+},
+{
+  "model": "faculty.lecturer",
+  "pk": 25,
+  "fields": {
+    "name": "Гайдай Олександра Юріївна",
+    "academic_position": "senior_lecturer",
+    "academic_degree": "phd",
+    "department": 9
+  }
+}
+]

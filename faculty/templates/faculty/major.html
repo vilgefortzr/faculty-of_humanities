@@ -1,0 +1,31 @@
+{% extends "faculty/base.html" %}
+{% block content %}
+  <div class="narrow">
+    <h1>{{ major.name }}</h1>
+    <p class="page-subtitle">{{ major.code }}</p>
+    <p>{{ major.description }}</p>
+    <div class="two-columns">
+      <div>
+        <h3>Предмети</h3>
+        {% if subjects %}
+          <ul>
+            {% for subject in subjects %}
+              <li>{{ subject.name }}</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="empty-text">Предметів поки нема :(</p>
+        {% endif %}
+      </div>
+      <div>
+        <h3>Випускова кафедра</h3>
+        <p><a href="{% url 'department' major.graduating_department_id %}">{{ major.graduating_department }}</a></p>
+      </div>
+    </div>
+    <h3>Координатор набору</h3>
+    <address class="contacts-card">
+      <p>{{ major.recruiter_name }}</p>
+      <p>{{ major.recruiter_phone }}</p>
+    </address>
+  </div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "faculty/base.html" %}
+{% block content %}
+  <h1>Кафедри факультету</h1>
+  <div class="cards-grid">
+    {% for department in departments %}
+      <div class="card card-short">
+        <h3><a href="{% url 'department' department.id %}">{{ department.name }}</a></h3>
+        <p class="subtitle"><i class="accent-text">Завідувач кафедри:</i> {{ department.head_of_department }}</p>
+        {% with majors=department.majors.all %}
+          {% if majors %}
+            <ul>
+              {% for major in majors %}
+                <li>{{ major.name }}</li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <p class="empty-text">Випускових спеціальностей поки нема :(</p>
+          {% endif %}
+        {% endwith %}
+      </div>
+    {% empty %}
+      <p class="empty-text">Кафедр поки нема :(</p>
+    {% endfor %}
+  </div>
+{% endblock %}

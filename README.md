@@ -31,8 +31,14 @@ Requires the latest patch release of Python 3.12, 3.13, or 3.14. Run these comma
    ```bash
    python manage.py migrate
    ```
+   
+4. Load fixtures for initial data:
 
-4. Start the development server:
+   ```bash
+   python manage.py loaddata faculty_data
+   ```   
+
+5. Start the development server:
 
    ```bash
    python manage.py runserver
